@@ -270,7 +270,7 @@ function displayData(wdata){
     suns.innerHTML=`<label>Sunset:- ${sunse} </label>`
     uvd.innerHTML=`<label style="font-size: larger; font-weight: bold;">${uvdata}</label>`
     hightemp.innerHTML=`<label>Highest Temp is ${hight}&#176c </label>`
-    lowtemp.innerHTML=`<label>Highest Temp is ${lowt}&#176c </label>`
+    lowtemp.innerHTML=`<label>Lowest Temp is ${lowt}&#176c </label>`
     co.innerHTML=` <label style="font-size: large; font-weight: bold;" id="co" >C0:- ${codata}ppb</label>`
     no2.innerHTML=`<label style="font-size: large; font-weight: bold;">NO<sub>2</sub>:- ${no2data}ppb</label>`
     o3.innerHTML=` <label style="font-size: large; font-weight: bold;">O<sub>3</sub>:- ${o3data}ppb</label>`
@@ -288,23 +288,23 @@ function displayData(wdata){
 
     if(uvdata<=2){
         uvd1.innerHTML=`<label style="background-color: rgb(13, 123, 117); border-radius: 50px;">Good</label>`
-         uvd2.innerHTML=` <label id="uvd2">Good</label> Risk from UV Rays`          
+         uvd2.innerHTML=` <label >Good</label> Risk from UV Rays`          
     }
     else if(uvdata<=5 ){
         uvd1.innerHTML=`<label style="background-color: rgb(152, 173, 19); border-radius: 50px;">Moderate</label>`
-         uvd2.innerHTML=` <label id="uvd2">Moderate</label> Risk from UV Rays`   
+         uvd2.innerHTML=` <label >Moderate</label> Risk from UV Rays`   
     } 
     else if(uvdata<=7 ){
         uvd1.innerHTML=`<label style="background-color: rgb(210, 75, 21); border-radius: 50px;">High</label>`
-         uvd2.innerHTML=` <label id="uvd2">High</label> Risk from UV Rays`   
+         uvd2.innerHTML=` <label >High</label> Risk from UV Rays`   
     } 
     else if(uvdata<=10 ){
         uvd1.innerHTML=`<label style="background-color: rgb(185, 25, 25); border-radius: 50px;">Very High</label>`
-         uvd2.innerHTML=` <label id="uvd2">Very High</label> Risk from UV Rays`   
+         uvd2.innerHTML=` <label >Very High</label> Risk from UV Rays`   
     } 
     else{
         uvd1.innerHTML=`<label style="background-color: rgb(246, 9, 9); border-radius: 50px;">Extremely High</label>`
-         uvd2.innerHTML=` <label id="uvd2">Extremely High</label> Risk from UV Rays` 
+         uvd2.innerHTML=` <label >Extremely High</label> Risk from UV Rays` 
     }
 }
 
